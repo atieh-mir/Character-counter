@@ -9,11 +9,13 @@ function App() {
   }
   return (
     <>
-    <h1>Character counter</h1>
-    <form onChange={handleOnChange}>
-      <textarea placeholder='write some text..'></textarea>
-    </form>
-    <h3>Your character counter : {count} </h3>
+    <Header />
+    <Form
+    onChangeCharacter={handleOnChange}
+     />
+    <Footer 
+    counter={count}
+     />
     </>
   )
 }
